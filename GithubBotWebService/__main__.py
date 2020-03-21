@@ -6,6 +6,7 @@ from aiohttp import web
 from gidgethub import routing, sansio
 from gidgethub import aiohttp as gh_aiohttp
 
+routes = web.RouteTableDef()
 router = routing.Router()
 
 @router.register("issues", action="opened")
